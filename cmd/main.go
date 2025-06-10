@@ -3,14 +3,35 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/vikkkichu/study_go/internal/model"
 	"log"
 	"os"
+
+	"github.com/vikkkichu/study_go/internal/model"
+	"github.com/vikkkichu/study_go/internal/task5"
 )
 
 func main() {
-	secondUser()
+	task5.Scan()
 }
+
+// var (
+// 	rubles          float64 = 1500
+// 	rublesToDollars float64 = 92.5
+// 	dollars         float64 = rubles / rublesToDollars
+// )
+// _, _ = fmt.Println(fmt.Sprintf(" %0.2f RUB = %0.2f USD", rubles, dollars))
+// var (
+//	name        string  = "Вика"
+//	age         int     = 26
+//	temperature float64 = 25.5
+// )
+//	// var (
+//	name        string  = "Вика"
+//	age         int     = 26
+//	temperature float64 = 25.5
+//)
+
+//fmt.Println(fmt.Sprintf("Привет! Меня зовут %v. Мне %v лет. Сегодня на улице %v градусов.", name, age, temperature))
 
 func firstUser() {
 	fileContent, err := os.ReadFile("testdata/user.json")
@@ -27,7 +48,7 @@ func firstUser() {
 }
 
 func secondUser() {
-	fileContent, err := os.ReadFile("testdata/users.json")
+	fileContent, err := os.ReadFile("../testdata/users.json")
 	if err != nil {
 		panic(err)
 	}
