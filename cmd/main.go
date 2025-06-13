@@ -7,11 +7,11 @@ import (
 	"os"
 
 	"github.com/vikkkichu/study_go/internal/model"
-	"github.com/vikkkichu/study_go/internal/task5"
+	"github.com/vikkkichu/study_go/internal/task10"
 )
 
 func main() {
-	task5.Scan()
+	task10.String()
 }
 
 // var (
