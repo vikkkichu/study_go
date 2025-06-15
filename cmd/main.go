@@ -6,12 +6,12 @@ import (
 	"log"
 	"os"
 
+	"github.com/vikkkichu/study_go/internal/arrays"
 	"github.com/vikkkichu/study_go/internal/model"
-	"github.com/vikkkichu/study_go/internal/task10"
 )
 
 func main() {
-	task10.String()
+	arrays.Sum()
 }
 
 // var (
